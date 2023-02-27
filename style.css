@@ -13,7 +13,7 @@ body{
     background-image: url("images/blobs.png"), url("images/blueblob.png");
     background-repeat: no-repeat;
     background-position: top -100px right -100px, left bottom;
-    background-size: 350px 350px, 300px 300px;
+    background-size: 400px 400px, 250px 250px;
     color: #293264;
     font-family: 'Karla', sans-serif;
     font-size: 24pt;
