@@ -81,7 +81,8 @@ main{
 }
 
 .answers:hover{
-    background-color: #293264;
+    background-color: #D6DBF5;
+    color: #293264;
     cursor: pointer;
     border: none;
     scale: 1.125;
