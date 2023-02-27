@@ -57,6 +57,7 @@ main{
      width: 250px;
      border: none;
      border-radius: 15px;
+     font-size: 18pt;
  }
 
 .questions{
@@ -103,7 +104,7 @@ main{
     color: #F5F7FB;
     border: none;
     border-radius: 25px;
-    font-size: .75rem;
+    font-size: 18pt;
     margin: 15px 0 0 0;
 }
 
