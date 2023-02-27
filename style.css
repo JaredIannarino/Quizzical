@@ -1,23 +1,37 @@
-body, html, #root, main {
-    height: fit-content;
-    width: 100%;
-    margin: 0;
+/* THIS IS THE SEMANTIC ELEMENTS */
+
+body, html {
+    height: 100vh;
+    width: 100vw;
     padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url("images/blobs.png"), url("images/blueblob.png");
+    background-repeat: no-repeat;
+    background-position: top -100px right -100px, left bottom;
     color: #293264;
     font-family: 'Karla', sans-serif;
     font-size: 18pt;
+    background-attachment: fixed;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+
  }
  
- #root{
-     width: 85%;
- }
- 
- body{
-     display: flex;
-     justify-content: center;
-     background-image: url("images/blobs.png"), url("images/blueblob.png");
-     background-repeat: no-repeat;
-     background-position: top -100px right -100px, left bottom;
+#root{
+    height: fit-content;
+    height: 100%;
+    width: 85%;
  }
  
  .start-menu{
@@ -31,11 +45,6 @@ body, html, #root, main {
      min-width: 280px;
  }
  
- main{
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
  
  .start-menu > h1{
      margin: 0;
