@@ -88,6 +88,10 @@ main{
     scale: 1.125;
 }
 
+.answers:active{
+    border: 1px solid #293264;
+}
+
 .q-wpr{
     display: flex;
     flex-direction: column;
