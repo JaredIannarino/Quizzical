@@ -1,0 +1,126 @@
+body, html, #root, main {
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #293264;
+    font-family: 'Karla', sans-serif;
+    font-size: 18pt;
+ }
+ 
+ #root{
+     width: 85%;
+ }
+ 
+ body{
+     display: flex;
+     justify-content: center;
+     background-image: url("images/blobs.png"), url("images/blueblob.png");
+     background-repeat: no-repeat;
+     background-position: top -100px right -100px, left bottom;
+ }
+ 
+ .start-menu{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     height: 40%;
+     width: 40%;
+     min-width: 280px;
+ }
+ 
+ main{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .start-menu > h1{
+     margin: 0;
+ }
+ 
+ .start-menu > button {
+     background-color: #4D5B9E;
+     color: whitesmoke;
+     height: 55px;
+     width: 250px;
+     border: none;
+     border-radius: 15px;
+ }
+
+.questions{
+    font-size: 1em;
+}
+
+.answers{
+    line-height: 1rem;
+    height: 30px;
+    width: fit-content;
+    min-width: 100px;
+    font-size: .7rem;
+    border: 1px solid #4D5B9E;
+    background-color: transparent;
+    border-radius: 15px;
+    color: #293264;
+    padding:0 15px;
+    font-weight: 500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.q-wpr{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #DBDEF0;
+    width: 100%;
+    padding: 0 0 25px 0;
+    margin: 0;
+
+}
+
+.answer-wpr{
+    display: flex;
+    gap: 25px;
+    width: 100%;
+    height: fit-content;
+    flex-wrap:wrap;
+}
+
+.check-answers-btn{
+    height: 60px;
+    width: 200px;
+    background-color: #4D5B9E;
+    color: #F5F7FB;
+    border: none;
+    border-radius: 25px;
+    font-size: .75rem;
+    margin: 15px 0 0 0;
+}
+
+.quiz-wpr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+    height: fit-content;
+}
+
+.selected {
+  background-color: #D6DBF5;
+  color: #293264;
+  border: none;
+}
+
+.correct {
+    background-color: #94D7A2;
+    border: none;
+}
+
+.incorrect{
+    background-color: #F8BCBC;
+}
+
+.lessOpaque{
+    opacity: .5;
+}
