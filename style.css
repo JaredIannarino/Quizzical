@@ -80,6 +80,13 @@ main{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.answers:hover{
+    background-color: #293264;
+    cursor: pointer;
+    border: none;
+    scale: 1.125;
+}
+
 .q-wpr{
     display: flex;
     flex-direction: column;
