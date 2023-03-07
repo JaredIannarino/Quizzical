@@ -1,7 +1,6 @@
 /* THESE ARE THE MAIN CONTAINERS */
 
 body, html {
-    min-height: 100vh;
     height: 100%;
     width: 100%;
     padding: 0;
@@ -43,11 +42,13 @@ main{
      width: 100%;
      min-width: 280px;
     font-size: 4rem;
+
  }
  
  
  .start-menu > h1{
     margin: 0;
+    height: 25%;
 
  }
  
@@ -63,6 +64,7 @@ main{
 
 .start-menu > p {
     line-height: 2em;
+        height: 25%;
 }
 
 .questions{
