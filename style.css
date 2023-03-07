@@ -169,7 +169,7 @@ main{
     justify-content: flex-start;
     gap: 50px;
     width: 100%;
-    height: fit-content;
+    height: 50%;
     font-size: 3rem;
     border: 1px solid red;
     padding: 0;
