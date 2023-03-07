@@ -20,7 +20,7 @@ body{
     font-family: 'Karla', sans-serif;
     font-size: 18pt;
     background-attachment: fixed;
-    height: fit-content;
+    height: 100%;
     border: 2px solid red;
 }
 
