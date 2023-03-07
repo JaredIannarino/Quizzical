@@ -70,8 +70,8 @@ function decodeHTMLEntities(text) {
   return (
     <div className="quiz-wpr">
       {questionEls}
-      <div className="results">
-        {answersChecked ? <p>You got {correctAnswers}/{props.questions.length}</p> : "" }
+      <div className="results-wpr">
+        {answersChecked ? <p className="results">You got {correctAnswers}/{props.questions.length}</p> : "" }
         {answersChecked ? <button className="check-answers-btn" onClick={props.restartGame}>
         Play Again
       </button> : <button className="check-answers-btn" onClick={handleSubmit}>
