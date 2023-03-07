@@ -1,9 +1,17 @@
 import React from 'react';
 
 export default function QuizMenu(props) {
+
   const [userAnswers, setUserAnswers] = React.useState([]);
   const [answersChecked, setAnswersChecked] = React.useState(false);
   const [correctAnswers, setCorrectAnswers] = React.useState(0)
+
+function decodeHTMLEntities(text) {
+  const tempElement = document.createElement("div");
+  tempElement.innerHTML = text;
+  return tempElement.textContent;
+}
+
 
   const combinedAnswers = React.useMemo(() => {
     const combined = [];
@@ -12,7 +20,7 @@ export default function QuizMenu(props) {
       const wrongAnswers = props.wrongAnswers[i];
       const allAnswers = [...wrongAnswers, rightAnswer];
       shuffleArray(allAnswers);
-      combined.push(allAnswers);
+      combined.push(allAnswers.map(answer => decodeHTMLEntities(answer)));
     }
     return combined;
   }, [props.questions, props.rightAnswers, props.wrongAnswers]);
@@ -38,7 +46,7 @@ export default function QuizMenu(props) {
     setUserAnswers(newAnswers);
   }}
 >
-  {answer}
+  {decodeHTMLEntities(answer)}
 </button>
           ))}
         </div>
@@ -62,12 +70,14 @@ export default function QuizMenu(props) {
   return (
     <div className="quiz-wpr">
       {questionEls}
-      {answersChecked ? <p>You got {correctAnswers}/{props.questions.length}</p> : "" }
-      {answersChecked ? <button className="check-answers-btn" onClick={props.restartGame}>
+      <div className="results">
+        {answersChecked ? <p>You got {correctAnswers}/{props.questions.length}</p> : "" }
+        {answersChecked ? <button className="check-answers-btn" onClick={props.restartGame}>
         Play Again
       </button> : <button className="check-answers-btn" onClick={handleSubmit}>
         Check Answers
       </button>}
+      </div>
     </div>
   );
 }
