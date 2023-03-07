@@ -5,7 +5,8 @@ export default function StartMenu(props) {
   return (
     <div className="start-menu">
       <h1>Quizzical</h1>
-      <p>Test your knowledge with the mini trivia game</p>
+      <p>Test your knowledge with the mini trivia game...
+      Good luck!</p>
       <form className="form-wpr" onSubmit={props.handleSubmit}>
       <div className="wpr">
         <label className="label" htmlFor="difficulty">Difficulty:</label>
