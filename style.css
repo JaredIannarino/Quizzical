@@ -212,7 +212,7 @@ main{
 select {
     appearance: none;
     background-image: url('images/arrow.png');
-    background-position: right center -10px;
+    background-position: calc(100% - 10px) center;
     background-repeat: no-repeat;
     background-size: 30px;
   }
