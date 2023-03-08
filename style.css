@@ -185,7 +185,6 @@ main{
 
 .label, .selector{
     display: flex;
-    justify-content: center;
     font-size: 2.75rem;
 }
 
