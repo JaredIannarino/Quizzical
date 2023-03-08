@@ -209,6 +209,14 @@ main{
     text-align: center;
 }
 
+select {
+    appearance: none;
+    background-image: url('images/arrow.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 20px; /* add padding to make room for the arrow */
+  }
+
 select::before,
 select::after {
   content: '';
