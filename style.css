@@ -216,6 +216,7 @@ select {
     background-repeat: no-repeat;
     background-size: 30px;
     padding-right: 50px;
+    padding-left: 10px;
   }
 
 select::before,
