@@ -188,7 +188,7 @@ main{
 }
 
 .label{
-    width: 40%;
+    width: 50%;
 }
 
 .wpr{
@@ -203,6 +203,6 @@ main{
 .selector{
     border-radius: 15px;
     height:100%;
-    width: 60%;
+    width: 50%;
     text-align: center;
 }
