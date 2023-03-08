@@ -46,7 +46,7 @@ main{
      height:100%;
      width: 100%;
      min-width: 280px;
-    font-size: 4rem;
+    font-size: 5rem;
     padding: 0;
     margin: 0;
 
@@ -184,6 +184,7 @@ main{
 .label, .selector{
     display: flex;
     justify-content: center;
+    font-size: 2.75rem;
 }
 
 .label{
