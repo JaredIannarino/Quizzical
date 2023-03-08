@@ -5,6 +5,7 @@ body, html {
     width: 100vw;
     padding: 0;
     margin: 0;
+    -webkit-overflow-scrolling: touch;
 }
 
 body{
@@ -14,6 +15,7 @@ body{
     background-repeat: no-repeat;
     background-size: 400px, 400px;
     background-position: top -100px right -100px, left bottom;
+    background-position: fixed;
     color: #293264;
     font-family: 'Karla', sans-serif;
     font-size: 18pt;
