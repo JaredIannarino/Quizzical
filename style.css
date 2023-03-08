@@ -208,3 +208,15 @@ main{
     width: 60%;
     text-align: center;
 }
+
+select::before,
+select::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
