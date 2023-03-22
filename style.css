@@ -295,6 +295,7 @@ select::after {
         row-gap: 10px;
         column-gap: 75px;
         width: 100%;
+        font-size: .75rem;
     }
     .start-menu{
         font-size: 5rem;
